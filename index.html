@@ -1,74 +1,239 @@
 <!DOCTYPE html>
 <html lang="en">
-<head> <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+<head>
     <meta charset="UTF-8">
+    <meta name="author" content="Kaya Tretter">
+    <meta name="description" content="An information webpage about singer-songwriter Kanye West and his music career.">
+    <meta name="keywords" content="Kanye West, Kim Kardashian, North West, Vultures, Graduation, The Life of Pablo">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="author content"Kaya Tretter">
-    <meta name="description" content="An information webpage about singer-songwriter Kanye West and his music career.>
-    <meta name= "keywords" content="" Kanye West, Kim Kardashian, North West, Vultures, Graduation, The Like of Pablo">
-    <title>The life of Kanye West</title>
-    <a href="https://www.youtube.com/watch?v=RJNQsSGjq2c&list=RDRJNQsSGjq2c&start_radio=1">Click here</a>
-    <a href="https://www.youtube.com/watch?v=QaZ93sibpk0">Click here</a>
- <link rel="stylesheet" href="style.css"> 
-</head> 
+    <title>The Life of Kanye West</title>
+
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap');
+
+        html {
+            scroll-behavior: smooth;
+        }
+
+        body {
+            font-family: 'Montserrat', sans-serif;
+            background-color: #111;
+            color: #f5f5f5;
+            margin: 0;
+            line-height: 1.6;
+        }
+
+        header {
+            background-color: #000;
+            color: white;
+            text-align: center;
+            padding: 30px 20px;
+        }
+
+        nav {
+            background-color: #1a1a1a;
+            text-align: center;
+            padding: 15px;
+            position: sticky;
+            top: 0;
+            z-index: 50;
+            backdrop-filter: saturate(120%) blur(6px);
+        }
+
+        nav a {
+            color: #f2c94c;
+            text-decoration: none;
+            margin: 0 15px;
+            font-weight: bold;
+            font-size: 16px;
+        }
+
+        nav a:hover {
+            color: white;
+            border-bottom: 2px solid #f2c94c;
+            padding-bottom: 3px;
+        }
+
+        nav a:focus {
+            outline: 3px solid rgba(242, 201, 76, 0.25);
+            outline-offset: 3px;
+        }
+
+        main {
+            max-width: 1100px;
+            margin: 20px auto;
+            padding: 20px;
+        }
+
+        section {
+            margin-bottom: 25px;
+        }
+
+        h1, h2, h3, h4 {
+            color: #f2c94c;
+            margin-top: 0;
+        }
+
+        p {
+            font-size: 16px;
+            color: #e8e8e8;
+        }
+
+        ol, ul {
+            padding-left: 25px;
+        }
+
+        li {
+            margin-bottom: 10px;
+        }
+
+        a {
+            color: #4da6ff;
+            text-decoration: none;
+        }
+
+        a:hover {
+            color: #ffffff;
+        }
+
+        .card {
+            background-color: rgba(28, 28, 28, 0.65);
+            padding: 20px;
+            border-radius: 12px;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.35);
+            border: 1px solid rgba(242, 201, 76, 0.08);
+        }
+
+        .intro {
+            max-width: 900px;
+            margin: 0 auto;
+            font-size: 18px;
+        }
+
+        .gallery {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 20px;
+            margin-top: 20px;
+            align-items: start;
+        }
+
+        .gallery img {
+            width: 100%;
+            height: 250px;
+            object-fit: cover;
+            border-radius: 12px;
+            border: 3px solid #f2c94c;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+            display: block;
+        }
+
+        figure {
+            margin: 0;
+        }
+
+        figcaption {
+            margin-top: 8px;
+            font-size: 14px;
+            text-align: center;
+        }
+
+        footer {
+            background-color: #000;
+            color: white;
+            text-align: center;
+            padding: 20px;
+            margin-top: 30px;
+            font-size: 14px;
+        }
+    </style>
+</head>
 <body>
+
     <header>
-        <!-- love Kanye West -->
-
-    
-        <h1>The life of Kanye West</h1>
-        <p> Kanye West was born in <mark>Atlanta, Georgia,</mark> and raised in Chicago, where he was heavily influenced by the city’s hip-hop scene, soul music, and his mother, Donda West. His upbringing emphasized education, creativity, and self-expression, which later shaped both his lyrical themes and artistic confidence. From a young age, Kanye showed interest in poetry, art, and music, laying the foundation for his future career.</p>
+        <h1>The Life of Kanye West</h1>
+        <p class="intro">
+            An information webpage about singer-songwriter Kanye West and his music career.
+        </p>
     </header>
+
+    <nav>
+        <a href="#early-life">Early Life</a>
+        <a href="#producer">Producer</a>
+        <a href="#solo-artist">Solo Artist</a>
+        <a href="#albums">Albums</a>
+        <a href="#impact">Impact</a>
+        <a href="#gallery">Gallery</a>
+    </nav>
+
     <main>
-    <section>
-        <h2> Breakthrough as a Producer</h2>
-        <p>Before becoming a successful rapper, Kanye made his name as a producer in the late <small>1990s and early 2000s.</small> He gained recognition for his work with Roc-A-Fella Records, especially producing tracks for Jay-Z’s The Blueprint. His signature “chipmunk soul” style set him apart and helped redefine mainstream hip-hop production during that era.</p>
-</section>
-<section>
-        <h3>Rise as a Solo Artist </h3>
-        <p>Kanye’s transition from producer to rapper was met with skepticism, but his debut album The College Dropout (2004) proved critics wrong. The album addressed themes like education, faith, and self-worth while blending humor with social commentary. Its success established Kanye as a unique voice in hip-hop and launched him into mainstream stardom.</p>
-</section>
-<section>
-        <h4>Noteable Albums and Hit Songs </h4>
-        <ol>
-            <li>The College Dropout – “Jesus Walks,” “Through the Wire”</li>
-            <li>Late Registration – “Gold Digger,” “Touch the Sky”</li>
-            <li>Graduation – “Stronger,” “Flashing Lights”</li>
-            <li>808s & Heartbreak – “Heartless,” “Love Lockdown”</li>
-            <li>My Beautiful Dark Twisted Fantasy – “Runaway,” “Power”</li>
-        </ol>
+        <section id="early-life" class="card">
+            <h2>Early Life and Influences</h2>
+            <p>
+                Kanye West was born in Atlanta, Georgia, and raised in Chicago, where he was heavily influenced by the city’s hip-hop scene, soul music, and his mother, Donda West. His upbringing emphasized education, creativity, and self-expression, which later shaped both his lyrical themes and artistic confidence. From a young age, Kanye showed interest in poetry, art, and music, laying the foundation for his future career.
+            </p>
         </section>
-        <section>
-        <h4>Awards, Influence and Cultural Impact </h4>
 
-        <ul> 
-            <li>Multiple Grammy Awards across rap, production, and songwriting</li>
-            <li>Major influence on modern hip-hop production and album concepts</li>
-            <li>Impact on fashion through the Yeezy brand</li>
-            <li>Inspired artists across hip-hop, pop, and alternative genres</li>
-            <li>Known for blending music, art, and controversy into a lasting legacy</li>
-        </ul>
+        <section id="producer" class="card">
+            <h2>Breakthrough as a Producer</h2>
+            <p>
+                Before becoming a successful rapper, Kanye made his name as a producer in the late 1990s and early 2000s. He gained recognition for his work with Roc-A-Fella Records, especially producing tracks for Jay-Z’s <em>The Blueprint</em>. His signature “chipmunk soul” style set him apart and helped redefine mainstream hip-hop production during that era.
+            </p>
         </section>
-        <section>
 
-        <h4>Gallery</h4>  
-        <figure>
-            <img src="https://media.cnn.com/api/v1/images/stellar/prod/190525151745-kanye-west-my-next-guest.jpg?q=x_0,y_0,h_1371,w_2436,c_fill/h_653,w_1160/f_avif" width="400">
-            </figure>
-            <figure>
-                <img src="https://media.newyorker.com/photos/5909741d2179605b11ad8004/master/pass/Trammell-Kanye-West-Madison-Square-Garden.jpg" width="400">
-            </figure>
-            <figure>
-                <img src="https://akns-images.eonline.com/eol_images/Entire_Site/202512/rs_1200x1200-250202103903-1200-kanye-west-taylor-swift-cjh-020225.jpg?fit=around%7C1080:1080&output-quality=90&crop=1080:1080;center,top" width="400">
-            </figure>
-            </section>
+        <section id="solo-artist" class="card">
+            <h2>Rise as a Solo Artist</h2>
+            <p>
+                Kanye’s transition from producer to rapper was met with skepticism, but his debut album <strong>The College Dropout</strong> (2004) proved critics wrong. The album addressed themes like education, faith, and self-worth while blending humor with social commentary. Its success established Kanye as a unique voice in hip-hop and launched him into mainstream stardom.
+            </p>
+        </section>
 
-            <footer>Kaya Tretter is a sophomore at the University of Miami and an avid fan of music and specifically Kanye. She is from Orange County, California and currently live in Miami Florida. She is currently a student in the University of Miamis Lab class</footer>
-            
+        <section id="albums" class="card">
+            <h2>Notable Albums and Hit Songs</h2>
+            <ol>
+                <li><strong>The College Dropout</strong> – “Jesus Walks,” “Through the Wire”</li>
+                <li><strong>Late Registration</strong> – “Gold Digger,” “Touch the Sky”</li>
+                <li><strong>Graduation</strong> – “Stronger,” “Flashing Lights”</li>
+                <li><strong>808s &amp; Heartbreak</strong> – “Heartless,” “Love Lockdown”</li>
+                <li><strong>My Beautiful Dark Twisted Fantasy</strong> – “Runaway,” “Power”</li>
+            </ol>
+        </section>
 
+        <section id="impact" class="card">
+            <h3>Awards, Influence and Cultural Impact</h3>
+            <ul>
+                <li>Multiple Grammy Awards across rap, production, and songwriting</li>
+                <li>Major influence on modern hip-hop production and album concepts</li>
+                <li>Impact on fashion through the Yeezy brand</li>
+                <li>Inspired artists across hip-hop, pop, and alternative genres</li>
+                <li>Known for blending music, art, and controversy into a lasting legacy</li>
+            </ul>
+        </section>
 
-    </main>   
+        <section id="gallery" class="card">
+            <h3>Gallery</h3>
+            <div class="gallery">
+                <figure>
+                   <img src="kanye1.jpg" alt="Kanye West image 1"> 
+                    <figcaption><a href="https://www.google.com/search?sca_esv=20e61c84b11a2ebb&rlz=1C1VDKB_enUS1125US1126&sxsrf=ANbL-n58scqDGb6lJFiKB-AmZuFrSnZWtg:1769113842644&udm=2&fbs=ADc_l-aN0CWEZBOHjofHoaMMDiKp0UJuhqwKhR0QUhF54-6jIYFfWbU_Clyew-1Wh7zkL7GXEIyGmuNECR0N8Mieh0vrbko1hIXGpe6KXjyGEMS8qvHaRh07NvGqLEM3M87dnCJpMBzPaV5Lhp5Fj09RARKxk74OrMhODu_WtVQMOJKHENd2SPLAKC7sNmjJeo9Ay2jG82MyzB9jsSwsFJRv2_sldbWqNA&q=kanye+west&sa=X&sqi=2&ved=2ahUKEwi1iKHR_p-SAxU8VTABHY9WJX0QtKgLegQIExAB&biw=1280&bih=665&dpr=2&aic=0#sv=CAMSVhoyKhBlLXNEbjk3SWFlODZjNTdNMg5zRG45N0lhZTg2YzU3TToOUkM1VjhTSDJXalJySE0gBCocCgZtb3NhaWMSEGUtc0RuOTdJYWU4NmM1N00YADABGAcghe2ziAIwAkoKCAIQAhgCIAIoAg" target="_blank">Image source</a></figcaption>
+                </figure>
+                <figure>
+                    <img src="kanye2.jpg.webp" alt="Kanye West image 2">
+                    <figcaption><a href="https://www.google.com/search?sca_esv=20e61c84b11a2ebb&rlz=1C1VDKB_enUS1125US1126&sxsrf=ANbL-n58scqDGb6lJFiKB-AmZuFrSnZWtg:1769113842644&udm=2&fbs=ADc_l-aN0CWEZBOHjofHoaMMDiKp0UJuhqwKhR0QUhF54-6jIYFfWbU_Clyew-1Wh7zkL7GXEIyGmuNECR0N8Mieh0vrbko1hIXGpe6KXjyGEMS8qvHaRh07NvGqLEM3M87dnCJpMBzPaV5Lhp5Fj09RARKxk74OrMhODu_WtVQMOJKHENd2SPLAKC7sNmjJeo9Ay2jG82MyzB9jsSwsFJRv2_sldbWqNA&q=kanye+west&sa=X&sqi=2&ved=2ahUKEwi1iKHR_p-SAxU8VTABHY9WJX0QtKgLegQIExAB&biw=1280&bih=665&dpr=2&aic=0#sv=CAMSVhoyKhBlLXBWall6Vm11NUliQnZNMg5wVmpZelZtdTVJYkJ2TToOUVo1TTZMY2gydFpoZ00gBCocCgZtb3NhaWMSEGUtcFZqWXpWbXU1SWJCdk0YADABGAcgjJr5qAkwAkoKCAIQAhgCIAIoAg" target="_blank">Image source</a></figcaption>
+                </figure>
+                <figure>
+                    <img src="kanye3.jpg.avif" alt="Kanye West image 3">
+                    <figcaption><a href="https://www.google.com/search?sca_esv=20e61c84b11a2ebb&rlz=1C1VDKB_enUS1125US1126&sxsrf=ANbL-n58scqDGb6lJFiKB-AmZuFrSnZWtg:1769113842644&udm=2&fbs=ADc_l-aN0CWEZBOHjofHoaMMDiKp0UJuhqwKhR0QUhF54-6jIYFfWbU_Clyew-1Wh7zkL7GXEIyGmuNECR0N8Mieh0vrbko1hIXGpe6KXjyGEMS8qvHaRh07NvGqLEM3M87dnCJpMBzPaV5Lhp5Fj09RARKxk74OrMhODu_WtVQMOJKHENd2SPLAKC7sNmjJeo9Ay2jG82MyzB9jsSwsFJRv2_sldbWqNA&q=kanye+west&sa=X&sqi=2&ved=2ahUKEwi1iKHR_p-SAxU8VTABHY9WJX0QtKgLegQIExAB&biw=1280&bih=665&dpr=2&aic=0#sv=CAMSVhoyKhBlLUpRSjkwNVBtZ3FoSW5NMg5KUUo5MDVQbWdxaEluTToOdVNCMUJ0YmY1NWI4Yk0gBCocCgZtb3NhaWMSEGUtSlFKOTA1UG1ncWhJbk0YADABGAcg2M6rMDACSgoIAhACGAIgAigC" target="_blank">Image source</a></figcaption>
+                </figure>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>
+            Kaya Tretter is a sophomore at the University of Miami and an avid fan of music, especially Kanye West. She is from Orange County, California and currently lives in Miami, Florida. She is currently a student in the University of Miami’s Lab class.
+        </p>
+    </footer>
+
 </body>
 </html>
